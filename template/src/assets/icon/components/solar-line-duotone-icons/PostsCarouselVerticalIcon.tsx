@@ -1,0 +1,12 @@
+import React from "react";
+import { useIcon } from "../IconContext";
+
+const PostsCarouselVerticalIcon = (props: React.SVGProps<SVGSVGElement>) => {
+  const { className } = useIcon();
+  
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" fill="none" viewBox="0 0 24 24" {...props} className={`${className} ${props.className || ""}`}><path  stroke="currentColor"  strokeWidth="1.5" d="M5 11.5c0-1.886 0-2.828.586-3.414S7.114 7.5 9 7.5h6c1.886 0 2.828 0 3.414.586S19 9.614 19 11.5v1c0 1.886 0 2.828-.586 3.414S16.886 16.5 15 16.5H9c-1.886 0-2.828 0-3.414-.586S5 14.386 5 12.5z"/><path  stroke="currentColor"  strokeLinecap="round"  strokeWidth="1.5" d="M19 2v.5A2.5 2.5 0 0 1 16.5 5h-9A2.5 2.5 0 0 1 5 2.5V2m14 20v-.5a2.5 2.5 0 0 0-2.5-2.5h-9A2.5 2.5 0 0 0 5 21.5v.5"  opacity=".5"/></svg>
+  );
+};
+
+export default PostsCarouselVerticalIcon;

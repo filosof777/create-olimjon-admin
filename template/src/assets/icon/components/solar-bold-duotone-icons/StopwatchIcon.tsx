@@ -1,0 +1,12 @@
+import React from "react";
+import { useIcon } from "../IconContext";
+
+const StopwatchIcon = (props: React.SVGProps<SVGSVGElement>) => {
+  const { className } = useIcon();
+
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" fill="none" viewBox="0 0 24 24" {...props} className={`${className} ${props.className || ""}`}><path  fill="currentColor" d="M12 23a9 9 0 1 0 0-18 9 9 0 0 0 0 18"  opacity=".5"/><path  fill="currentColor" d="M12 9.25a.75.75 0 0 1 .75.75v4a.75.75 0 0 1-1.5 0v-4a.75.75 0 0 1 .75-.75"/><path  fill="currentColor" fillRule="evenodd" d="M9.25 2.75A.75.75 0 0 1 10 2h4a.75.75 0 0 1 0 1.5h-4a.75.75 0 0 1-.75-.75" clipRule="evenodd"/></svg>
+  );
+};
+
+export default StopwatchIcon;

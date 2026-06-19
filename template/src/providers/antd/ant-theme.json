@@ -1,0 +1,33 @@
+{
+  "light": {
+    "token": {
+      "colorPrimary": "#1e50e7",
+      "colorInfo": "#1e50e7",
+      "colorTextBase": "#000000",
+      "colorBorder": "#d9d9d9",
+      "colorBgContainer": "#ffffff",
+      "colorTextHeading": "#000000",
+      "colorTextLabel": "#595959",
+      "colorTextDisabled": "#bfbfbf",
+      "borderRadius": 6
+    },
+    "components": {
+      "Modal": {
+        "borderRadiusLG": 12,
+        "borderRadiusSM": 12
+      },
+      "Notification": {
+        "colorError": "rgb(255,255,255)",
+        "colorInfo": "rgb(255,255,255)",
+        "colorPrimary": "rgb(255,255,255)",
+        "colorSuccess": "rgb(255,255,255)",
+        "colorWarning": "rgb(255,255,255)"
+      },
+      "Segmented": {
+        "itemSelectedBg": "#1e50e7",
+        "itemSelectedColor": "rgba(255,255,255,0.88)"
+      }
+    }
+  }
+
+}

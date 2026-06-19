@@ -1,0 +1,12 @@
+import React from "react";
+import { useIcon } from "../IconContext";
+
+const AltArrowRightIcon = (props: React.SVGProps<SVGSVGElement>) => {
+  const { className } = useIcon();
+  
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" fill="none" viewBox="0 0 24 24" {...props} className={`${className} ${props.className || ""}`}><path  fill="currentColor" d="m12.404 8.303 3.431 3.327c.22.213.22.527 0 .74l-6.63 6.43C8.79 19.201 8 18.958 8 18.43v-5.723z"/><path  fill="currentColor" d="M8 11.293V5.57c0-.528.79-.771 1.205-.37l2.481 2.406z"  opacity=".5"/></svg>
+  );
+};
+
+export default AltArrowRightIcon;

@@ -1,0 +1,12 @@
+import React from "react";
+import { useIcon } from "../IconContext";
+
+const WineglassTriangleIcon = (props: React.SVGProps<SVGSVGElement>) => {
+  const { className } = useIcon();
+  
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" fill="none" viewBox="0 0 24 24" {...props} className={`${className} ${props.className || ""}`}><path  stroke="currentColor"  strokeLinecap="round"  strokeWidth="1.5" d="M16.244 21H7.756M4.701 3h14.598c1.5 0 2.263 1.794 1.217 2.864l-7.801 7.976a1 1 0 0 1-1.43 0L3.484 5.864C2.438 4.794 3.2 3 4.7 3Z"/><path  stroke="currentColor"  strokeLinecap="round"  strokeWidth="1.5" d="M12 14.571V21M7.473 9.75h9.054"  opacity=".5"/></svg>
+  );
+};
+
+export default WineglassTriangleIcon;

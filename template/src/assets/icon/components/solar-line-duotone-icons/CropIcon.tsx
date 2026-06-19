@@ -1,0 +1,12 @@
+import React from "react";
+import { useIcon } from "../IconContext";
+
+const CropIcon = (props: React.SVGProps<SVGSVGElement>) => {
+  const { className } = useIcon();
+  
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" fill="none" viewBox="0 0 24 24" {...props} className={`${className} ${props.className || ""}`}><path  stroke="currentColor"  strokeLinecap="round"  strokeWidth="1.5" d="M22 19h-9c-3.771 0-5.657 0-6.828-1.172S5 14.771 5 11V2"/><path  stroke="currentColor"  strokeLinecap="round"  strokeWidth="1.5" d="M2 5h9c3.771 0 5.657 0 6.828 1.172S19 9.229 19 13v9"  opacity=".5"/><path  stroke="currentColor"  strokeWidth="1.5" d="M8.5 11.5c0-1.414 0-2.121.44-2.56.439-.44 1.146-.44 2.56-.44h1c1.414 0 2.121 0 2.56.44.44.439.44 1.146.44 2.56v1c0 1.414 0 2.121-.44 2.56-.439.44-1.146.44-2.56.44h-1c-1.414 0-2.121 0-2.56-.44-.44-.439-.44-1.146-.44-2.56z"/></svg>
+  );
+};
+
+export default CropIcon;

@@ -1,0 +1,43 @@
+{
+  "name": "create-olimjon-admin",
+  "version": "1.0.4",
+  "description": "Scaffold a modern React + TypeScript + Vite admin panel (Ant Design, Tailwind, React Query, Zustand, i18n) in seconds.",
+  "type": "module",
+  "bin": {
+    "create-olimjon-admin": "index.js"
+  },
+  "files": [
+    "index.js",
+    "template"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "vite",
+    "admin",
+    "admin-panel",
+    "dashboard",
+    "antd",
+    "ant-design",
+    "tailwindcss",
+    "react-query",
+    "zustand",
+    "starter",
+    "template",
+    "boilerplate",
+    "create"
+  ],
+  "author": "filosof777",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/filosof777/create-olimjon-admin.git"
+  },
+  "homepage": "https://github.com/filosof777/create-olimjon-admin#readme",
+  "bugs": {
+    "url": "https://github.com/filosof777/create-olimjon-admin/issues"
+  }
+}

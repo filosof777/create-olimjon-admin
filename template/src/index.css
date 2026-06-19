@@ -1,0 +1,251 @@
+@import "tailwindcss";
+@import "./assets/fonts/stylesheet.css";
+@custom-variant dark (&:where(.dark, .dark *));
+* {
+  font-family: "GT Walsheim Pro" !important;
+}
+:root {
+  --ck-color-base-border: #d9d9d9 !important;
+}
+
+*::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  font-weight: 400;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none !important;
+}
+
+.tdc-typography {
+  margin-bottom: 0 !important;
+}
+
+.tdc-typography-danger {
+  font-size: 10px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+input:disabled {
+  color: #000000 !important;
+}
+
+.tdc-typography {
+  margin-bottom: 0 !important;
+}
+
+.tdc-typography strong {
+  font-size: 10px;
+  font-weight: 400 !important;
+}
+
+.tdc-btn {
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+}
+/*.tdc-table-cell {*/
+/*  background-color: #fff;*/
+/*}*/
+/*.tdc-table-cell-row-hover {*/
+/*  background-color: #b9d5ff !important;*/
+/*}*/
+
+.tdc-table-small tr:first-child td {
+  padding-top: 12px !important;
+}
+
+.tdc-popconfirm-buttons {
+  display: flex;
+}
+
+.tdc-btn-icon {
+  display: flex;
+  align-items: center;
+}
+.tdc-input,
+.tdc-textarea,
+.tdc-picker {
+  min-width: 140px;
+}
+
+.tdc-otp .tdc-input {
+  min-width: auto;
+}
+
+.tdc-divider-inner-text {
+  border: 1px solid #f2f2f2;
+  border-radius: 8px;
+  background-color: #f2f2f2;
+}
+
+.ck-content {
+  border-radius: 0 0 8px 8px !important;
+}
+
+.ck-sticky-panel__content,
+.ck-toolbar {
+  border-radius: 8px 8px 0 0 !important;
+}
+
+.ck-body-wrapper {
+  display: none !important;
+}
+
+.fade-item {
+  opacity: 0;
+  transform: translateY(0);
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.fade-item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.fade-item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.fade-item:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.fade-item:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.fade-item:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.fade-item:nth-child(6) {
+  animation-delay: 0.6s;
+}
+.fade-item:nth-child(7) {
+  animation-delay: 0.7s;
+}
+.fade-item:nth-child(8) {
+  animation-delay: 0.8s;
+}
+.fade-item:nth-child(9) {
+  animation-delay: 0.9s;
+}
+.fade-item:nth-child(10) {
+  animation-delay: 1s;
+}
+.fade-item:nth-child(11) {
+  animation-delay: 1.1s;
+}
+.fade-item:nth-child(12) {
+  animation-delay: 1.2s;
+}
+.fade-item:nth-child(13) {
+  animation-delay: 1.3s;
+}
+.fade-item:nth-child(14) {
+  animation-delay: 1.4s;
+}
+.fade-item:nth-child(15) {
+  animation-delay: 1.5s;
+}
+.fade-item:nth-child(16) {
+  animation-delay: 1.6s;
+}
+.fade-item:nth-child(17) {
+  animation-delay: 1.7s;
+}
+.fade-item:nth-child(18) {
+  animation-delay: 1.8s;
+}
+.fade-item:nth-child(19) {
+  animation-delay: 1.9s;
+}
+.fade-item:nth-child(20) {
+  animation-delay: 2s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeOutLeft {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+}
+
+.fade-in-left {
+  animation: fadeInLeft 0.4s ease-out forwards;
+}
+
+.fade-out-left {
+  animation: fadeOutLeft 0.4s ease-in forwards;
+}
+
+.column-transition {
+  transition: width 0.3s ease-in-out, min-width 0.3s ease-in-out,
+    max-width 0.3s ease-in-out;
+}
+
+.tdc-select-selection-placeholder {
+  font-weight: 400 !important;
+}
+
+.olimjon-content {
+  @media screen and (min-width: 1800px) {
+    max-width: 90%;
+  }
+  /*@media screen and (min-width: 1600px) {*/
+  /*  max-width: 90%;*/
+  /*}*/
+
+  @media screen and (min-width: 2400px) {
+    max-width: 70%;
+  }
+}
+
+.tdc-select-tree-treenode-disabled .tdc-select-tree-node-content-wrapper-open {
+  color: #00000090 !important;
+  background-color: #ccc !important;
+  font-weight: 600 !important;
+}
