@@ -184,9 +184,11 @@ Yaratilgan loyiha ichida:
 |--------|----------|
 | `npm run dev` | Dev serverni ishga tushiradi (`--host=0.0.0.0`, tarmoqdan ham ochiladi) |
 | `npm run build` | Production uchun build qiladi (`dist/`) |
+| `npm run build-develop` | Develop muhiti uchun build |
 | `npm run build:check` | TypeScript tekshiruvi + build |
 | `npm run lint` | ESLint bilan kodni tekshiradi |
 | `npm run preview` | Build qilingan loyihani lokal ko'rib chiqadi |
+| `npm run push` | O'zgarishlarni commit qilib GitLab'ga push qiladi (CI/CD deploy'ni ishga tushiradi) |
 
 ---
 
@@ -247,6 +249,35 @@ server {
     }
 }
 ```
+
+### 🤖 GitLab CI/CD (avtomatik deploy)
+
+Loyiha bilan birga tayyor **GitLab CI/CD** konfiguratsiyasi keladi:
+
+- `.gitlab-ci.yml` — build qiladi, serverga `rsync` orqali deploy qiladi va Telegram'ga xabar yuboradi
+- `.ci-notify.sh` — muvaffaqiyatli deploy haqida Telegram xabari
+- `.ci-error-notify.sh` — xatolik haqida Telegram xabari
+
+`main` branch'ga push qilinganda avtomatik deploy ishga tushadi. Buni `npm run push` bilan tezda qilish mumkin:
+
+```bash
+npm run push   # git add + commit + push → CI deploy
+```
+
+**GitLab → Settings → CI/CD → Variables** bo'limida quyidagi o'zgaruvchilarni sozlang:
+
+| O'zgaruvchi | Tavsif |
+|-------------|--------|
+| `SSH_HOST_PROD` | Server manzili (IP/domen) |
+| `SSH_USER_PROD` | SSH foydalanuvchi |
+| `SSH_PASS_PROD` | SSH parol |
+| `SSH_DIRECTORY_LOCAL_PROD` | Lokal build papkasi (masalan `dist/`) |
+| `SSH_DIRECTORY_REMOTE_PROD` | Serverdagi maqsad papka |
+| `TELEGRAM_BOT_TOKEN` | Telegram bot tokeni |
+| `TELEGRAM_USER_ID` | Xabar yuboriladigan chat ID |
+| `TELEGRAM_USER_ID_ERROR` | Xatolik xabari uchun chat ID |
+
+> 💡 Develop muhiti uchun `.gitlab-ci.yml` ichidagi izohli (`#`) `developer` bo'limini oching va `_DEV` o'zgaruvchilarini sozlang.
 
 ---
 

@@ -26,6 +26,9 @@ const color = (s, code) => `${code}${s}${c.reset}`;
 // from published packages, so we ship it as _gitignore).
 const RENAME_ON_COPY = {
   _gitignore: ".gitignore",
+  "_gitlab-ci.yml": ".gitlab-ci.yml",
+  "_ci-notify.sh": ".ci-notify.sh",
+  "_ci-error-notify.sh": ".ci-error-notify.sh",
 };
 
 function ask(question) {
