@@ -1,6 +1,6 @@
 {
   "name": "create-olimjon-admin",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Scaffold a modern React + TypeScript + Vite admin panel (Ant Design, Tailwind, React Query, Zustand, i18n) in seconds.",
   "type": "module",
   "bin": {
